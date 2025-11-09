@@ -1,16 +1,87 @@
-# React + Vite
+# 🧩 Pokémon Memory Game (React + Tailwind CSS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fun **memory card game** built with **React** and **Tailwind CSS**, where players try **not to click the same Pokémon twice**.  
+Includes dynamic **score tracking**, **best score**, and a **selectable number of Pokémon**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- 🎮 **Memory game mechanics**:
+  - Click a Pokémon card only once per round
+  - Clicking the same Pokémon resets the current score
+- 🏆 **Scoreboard**:
+  - Tracks current score
+  - Tracks best score achieved
+- 🔄 **Randomized cards** on every click
+- 🌐 **Fetch Pokémon images** from the [PokéAPI](https://pokeapi.co/)
+- ⚙️ **Selectable Pokémon count** (8, 12, 16, 20, 30)
+- 🎨 **Responsive UI** styled with Tailwind CSS
+- 💾 Resets score when changing the number of Pokémon
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+
+src/
+├── components/
+│   ├── Card.jsx
+│   ├── GameBoard.jsx
+│   ├── Loader.jsx
+│   └── Scoreboard.jsx
+├── App.jsx
+├── main.jsx
+└── index.css
+
+```
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/kaziarman23/odin-memory-game.git
+cd odin-memory-game
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the development server
+
+```bash
+npm run dev
+```
+
+## 🧠 Concepts Practiced
+
+- React **state management** (`useState`)
+- React **side effects** (`useEffect`)
+- API fetching (`fetch`) and **async/await**
+- Conditional rendering
+- Event handling in React
+- **Tailwind CSS** for modern styling
+- Array **shuffle logic** (`sort(() => Math.random() - 0.5)`)
+
+---
+
+## 💡 Future Improvements
+
+- Add **multiple difficulty levels**
+- **Save best score** in `localStorage`
+- **Add animations** for card flipping
+- Allow **custom Pokémon selection** for advanced gameplay
+
+---
+
+## 🧑‍💻 Author
+
+**Kazi Arman**
+[GitHub](https://github.com/kaziarman23) • [Email](kaziarman@proton.me)
